@@ -1,0 +1,62 @@
+.posters {
+  display: flex;
+  padding: 20px;
+  overflow-x: auto; /* Use 'auto' to enable horizontal scrolling */
+  overflow-y: hidden;
+  /* Set a fixed height or max-height for the container to enable scrolling */
+  max-height: 250px; /* You can adjust this value as needed */
+}
+
+  
+  /* Style for horizontal scrollbar */
+  .posters::-webkit-scrollbar {
+    height: 8px; /* Adjust the height as needed */
+    background-color: transparent; /* Make the scrollbar background transparent */
+  }
+  
+  /* Track style */
+  .posters::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the scrollbar track transparent */
+  }
+  
+  /* Thumb style (the draggable part of the scrollbar) */
+
+  
+  .poster {
+    max-height: 230px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  h2{
+    padding-left: 15px;
+  }
+  .smallPoster{
+    max-height: 150px;
+    margin-right: 5px;
+    cursor: pointer;
+
+  }
+  .poster:hover{
+    transform: scale(1.05);
+    transition: ease-in-out 0.5s;
+  }
+  .smallPoster:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+  }
+  
+  .hovereff::hover{
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  .cls-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold; /* Set the desired font weight here */
+    cursor: pointer;
+  }
+  
